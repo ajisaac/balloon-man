@@ -12,6 +12,7 @@ Idea for balloons came from https://www.coolmathgames.com/0-hangman
 Artwork: [Ant](https://www.asciiart.eu/animals/insects/ants),
 [Fireworks](https://www.asciiart.eu/holiday-and-events/fireworks), [Hornets](https://www.asciiart.eu/animals/insects/ants)
 
+---
 #### Enhancements
 - Resizing terminal will crash the program
 - Add other word types and more data
