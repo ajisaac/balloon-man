@@ -100,7 +100,7 @@ def curses_main(w):
     b_x = 19
 
     # main menu
-    w.addstr(b_y + 2, b_x, 'Baloon Man Takes Geography Exam')
+    w.addstr(b_y + 2, b_x, 'Balloon Man Takes Geography Exam')
     w.addstr(b_y + 5, b_x, 'Instructions:')
     w.addstr(b_y + 7, b_x, 'Guess letters of the country or territory name.')
     w.addstr(b_y + 8, b_x,
@@ -111,16 +111,16 @@ def curses_main(w):
     # game loop
     while True:
         won = False
-        baloons = 5
+        balloons = 5
         curses.curs_set(False)
         letters = get_fresh_letters()
         word = get_country().upper()
         blank_word = make_word_blank(word)
 
         # a single round of play
-        while baloons > 0 and won is False:
+        while balloons > 0 and won is False:
             w.clear()
-            print_man(b_y + 1 + (5 - baloons), b_x + 30, w, get_man(baloons))
+            print_man(b_y + 1 + (5 - balloons), b_x + 30, w, get_man(balloons))
             print_letters(b_y + 2, b_x + 2, w, letters)
             print_blank_word(b_y + 11, b_x + 6, w, blank_word)
             w.refresh()
@@ -133,7 +133,7 @@ def curses_main(w):
                 if blank_word == word:
                     won = True
             else:
-                baloons -= 1
+                balloons -= 1
 
         # round is finished
         if won:
