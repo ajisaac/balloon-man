@@ -1,4 +1,4 @@
-#### Balloon Man
+## Balloon Man
 
 Hangman but with baloons
 
